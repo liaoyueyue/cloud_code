@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: order-service
+  profiles:
+    active: @profile.name@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 222.186.21.38:8848
+#        cluster-name: WUHAN
+#        ephemeral: false #非临时实例
+    loadbalancer:
+      nacos:
+        enabled: true
+
+
+mybatis:
+  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
