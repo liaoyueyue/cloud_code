@@ -1,6 +1,5 @@
 package com.product.controller;
 
-import com.product.api.ProductInterface;
 import com.product.model.ProductInfo;
 import com.product.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/product")
 @Slf4j
-public class ProductController implements ProductInterface {
+public class ProductController {
     @Autowired
     private ProductService productService;
 

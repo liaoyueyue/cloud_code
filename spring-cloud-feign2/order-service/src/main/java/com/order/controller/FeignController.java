@@ -1,6 +1,6 @@
 package com.order.controller;
 
-import com.order.api.ProductApi;
+import com.product.api.ProductApi;
 import com.product.model.ProductInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
