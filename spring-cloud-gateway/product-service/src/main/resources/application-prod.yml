@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_product?characterEncoding=utf8&useSSL=false
+    username: root
+    password: TEST@yyds.666
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 222.186.21.38:8848
+#        cluster-name: BEIJING
+#        namespace: 025435ff-67bf-4162-b06c-24b97481b652
+
+mybatis:
+  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
